@@ -1,0 +1,144 @@
+/* Footer Component - Inverted Gold Style */
+.footer {
+  background-color: #d4af37; /* Rich gold background */
+  color: #000000; /* Black text */
+  padding: 1em 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* .footer-section {
+    margin-bottom: 2rem;
+    } */
+
+.footer-section h3 {
+  color: #000000; /* Black text */
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background-color: #000000; /* Black line */
+}
+
+.footer-section p,
+.footer-section a {
+  color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #000000; /* Solid black on hover */
+}
+
+.footer-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  color: #000000; /* Black text */
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #000000;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] .footer-section h3 {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+[dir="rtl"] .footer-section h3::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-section p,
+[dir="rtl"] .footer-section a {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+[dir="rtl"] .copyright {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-container {
+  text-align: right;
+}
+
+/* Adjust font sizes for Arabic text */
+[dir="rtl"] .footer-section h3 {
+  font-size: 1.7rem;
+}
+
+[dir="rtl"] .footer-section p,
+[dir="rtl"] .footer-section a {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+[dir="rtl"] .copyright {
+  font-size: 1rem;
+}
+
+/* Maintain spacing in RTL */
+[dir="rtl"] .footer-section {
+  padding-left: 0;
+  padding-right: 0;
+}

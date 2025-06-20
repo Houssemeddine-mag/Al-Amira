@@ -1,0 +1,233 @@
+/* Page background and text */
+.admin-page {
+  background: #fff;
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar simulation (if you have a navbar, target its class instead) */
+.admin-navbar {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+/* Form styling */
+.admin-form {
+  background: #fff;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto 2.5rem auto;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.admin-form input {
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.admin-form input:focus {
+  border: 2px solid #111;
+}
+
+.admin-form button {
+  background: #ffd700;
+  color: #111;
+  border: none;
+  border-radius: 4px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-form button:hover {
+  background: #111;
+  color: #ffd700;
+}
+
+/* Product list */
+.admin-products-list {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+}
+
+.admin-products-list h2 {
+  color: #111;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 1.5rem;
+}
+
+.admin-products-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-products-list li {
+  border-bottom: 1px solid #ffd700;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.admin-products-list li:last-child {
+  border-bottom: none;
+}
+
+.admin-products-list img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ffd700;
+  background: #fafafa;
+}
+
+.admin-products-list strong {
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.admin-products-list p {
+  margin: 0.2rem 0 0 0;
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.admin-products-list .price {
+  font-family: "Cairo", sans-serif !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffd700;
+  margin-top: 0.5rem;
+}
+
+[dir="rtl"] .admin-products-list .price {
+  font-size: 1.3rem;
+}
+
+/* Image upload section */
+.image-upload {
+  margin: 1rem 0;
+}
+
+.image-upload input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  background: white;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  border: 1px solid #ffd700;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.image-preview img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Form buttons */
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-button {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ffd700;
+}
+
+.cancel-button:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+/* Product actions */
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background: #000;
+  color: #ffd700;
+}
+
+.delete-button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+
+.admin-products-list li .product-info .price {
+  font-family: "Cairo", sans-serif !important;
+}
+
+@media (max-width: 600px) {
+  .admin-form,
+  .admin-products-list {
+    padding: 1rem;
+  }
+  .admin-products-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
