@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebase/firebase";
-import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  deleteDoc,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
 import "../styles/Admin.css";
 
 const Admin = () => {
@@ -9,7 +16,7 @@ const Admin = () => {
     name: "",
     description: "",
     price: "",
-    image: ""
+    image: "",
   });
   const [imagePreview, setImagePreview] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -42,16 +49,16 @@ const Admin = () => {
         const img = new Image();
         img.onload = () => {
           // Create canvas for image compression
-          const canvas = document.createElement('canvas');
-          const ctx = canvas.getContext('2d');
-          
+          const canvas = document.createElement("canvas");
+          const ctx = canvas.getContext("2d");
+
           // Set maximum dimensions (increase these for higher quality)
           const MAX_WIDTH = 1920;
           const MAX_HEIGHT = 1920;
-          
+
           let width = img.width;
           let height = img.height;
-          
+
           // Calculate new dimensions while maintaining aspect ratio
           if (width > height) {
             if (width > MAX_WIDTH) {
@@ -64,16 +71,16 @@ const Admin = () => {
               height = MAX_HEIGHT;
             }
           }
-          
+
           canvas.width = width;
           canvas.height = height;
-          
+
           // Draw and compress image (quality 0.8 = 80% quality)
           ctx.drawImage(img, 0, 0, width, height);
-          const compressedBase64 = canvas.toDataURL('image/jpeg', 0.8);
-          
+          const compressedBase64 = canvas.toDataURL("image/jpeg", 0.8);
+
           setImagePreview(compressedBase64);
-          setForm(prev => ({ ...prev, image: compressedBase64 }));
+          setForm((prev) => ({ ...prev, image: compressedBase64 }));
         };
         img.src = reader.result;
       };
@@ -106,8 +113,12 @@ const Admin = () => {
       setImagePreview(null);
       setEditingId(null);
       await fetchProducts();
-      
-      alert(editingId ? "Produit modifié avec succès!" : "Produit ajouté avec succès!");
+
+      alert(
+        editingId
+          ? "Produit modifié avec succès!"
+          : "Produit ajouté avec succès!"
+      );
     } catch (error) {
       console.error("Error saving product:", error);
       alert(`Erreur: ${error.message}`);
@@ -149,9 +160,7 @@ const Admin = () => {
 
       <form className="admin-form" onSubmit={handleSubmit}>
         <h2>
-          {editingId
-            ? "Modifier le produit"
-            : "Ajouter un nouveau produit"}
+          {editingId ? "Modifier le produit" : "Ajouter un nouveau produit"}
         </h2>
         <input
           placeholder="Nom du produit"
@@ -186,18 +195,10 @@ const Admin = () => {
         </div>
         <div className="form-buttons">
           <button type="submit" disabled={loading}>
-            {loading
-              ? "Enregistrement..."
-              : editingId
-              ? "Modifier"
-              : "Ajouter"}
+            {loading ? "Enregistrement..." : editingId ? "Modifier" : "Ajouter"}
           </button>
           {editingId && (
-            <button
-              type="button"
-              onClick={resetForm}
-              className="cancel-button"
-            >
+            <button type="button" onClick={resetForm} className="cancel-button">
               Annuler
             </button>
           )}
