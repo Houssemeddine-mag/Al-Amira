@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations.js";
 import "../styles/Landing.css";
-import kalbLouz from "../assets/kalb louz2.webp";
+import kalbLouz from "../assets/kalb louz1.jpg";
 import logo from "../assets/logo.jpg"; // Add this import
 
 const Landing = () => {
@@ -11,7 +11,7 @@ const Landing = () => {
   const t = translations[language];
 
   return (
-    <div className="landing-page">
+    <div className="landing-page">-
       {/* Hero Section */}
       <section className="landing-hero">
         <div className="wave-container">
@@ -22,9 +22,9 @@ const Landing = () => {
         <div className="hero-content">
           <div className="hero-text">
             <div className="hero-logo">
-              <img src={logo} alt="Al Amira Logo" />
+              <img src={logo} alt="Al Ameera Logo" />
             </div>
-            <div className="brand-name">Al Amira</div>
+            <div className="brand-name">Al Ameera</div>
             <h1>{t.hero.title}</h1>
             <p className="hero-subtitle">{t.hero.subtitle}</p>
             <div className="hero-buttons">

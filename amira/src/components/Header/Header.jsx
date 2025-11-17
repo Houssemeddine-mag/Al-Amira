@@ -22,7 +22,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo-link" onClick={closeMenu}>
-          <img src={logo} alt="Al Amira Logo" className="logo" />
+          <img src={logo} alt="Al Ameera Logo" className="logo" />
         </Link>
 
         <nav className="nav">

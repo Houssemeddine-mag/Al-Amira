@@ -15,7 +15,7 @@ export const translations = {
       callButton: "Appelez-nous",
     },
     hero: {
-      title: "Al Amira",
+      title: "Al Ameera",
       subtitle: "L'Héritage du Kalb el Louz Constantinois",
       discover: "Découvrir Nos Produits",
       article: "Article sur nous",
@@ -29,11 +29,11 @@ export const translations = {
       },
       ingredients: {
         title: "Ingrédients d'Excellence",
-        text: "Une sélection rigoureuse de semoule extra-fine, d'amandes et de noix de première qualité, sublimée par notre sirop artisanal aux saveurs authentiques.",
+        text: "Une sélection rigoureuse de semoule épaisse, d'amandes et de noix de première qualité, sublimée par notre sirop artisanal aux saveurs authentiques.",
       },
       reputation: {
-        title: "Renommée Internationale",
-        text: "De l'Algérie aux États-Unis, en passant par l'Italie, l'Espagne et les pays du Golfe, nos pâtisseries enchantent les palais les plus exigeants.",
+        title: "Présence Nationale et Internationale",
+        text: "Notre Kalb el Louz est devenu un symbole incontournable des soirées ramadanesques en Algérie. Apprécié après l’iftar ou la prière des tarawih, il séduit les gourmets de tout le pays et a même conquis des amateurs jusqu’aux États-Unis, en Italie, en Espagne et dans les pays du Golfe.",
       },
     },
     about: {
@@ -42,7 +42,7 @@ export const translations = {
       contact: "Nous Contacter",
     },
     footer: {
-      brand: "Al Amira",
+      brand: "Al Ameera",
       tagline: "Douceurs Algériennes Traditionnelles",
       quickLinks: "Liens Rapides",
       navigation: {
@@ -55,7 +55,7 @@ export const translations = {
         email: "alameera2500@gmail.com",
         phone: "0541 37 63 03",
       },
-      copyright: "© 2025 Al Amira. Tous droits réservés.",
+      copyright: "© 2025 Al Ameera. Tous droits réservés.",
     },
     productsPage: {
       title: "Nos Délices Traditionnels",
@@ -93,11 +93,11 @@ export const translations = {
       },
       ingredients: {
         title: "مكونات متميزة",
-        text: "اختيار دقيق للسميد الناعم، واللوز والجوز من أجود الأنواع، معززة بشرابنا المحضر بطريقة تقليدية بنكهات أصيلة.",
+        text: "اختيار دقيق للسميد الخشن، واللوز والجوز من أجود الأنواع، معززة بشرابنا المحضر بطريقة تقليدية بنكهات أصيلة.",
       },
       reputation: {
-        title: "سمعة عالمية",
-        text: "من الجزائر إلى الولايات المتحدة، مروراً بإيطاليا وإسبانيا ودول الخليج، حلوياتنا تسحر أصحاب الذوق الرفيع.",
+        title: "حضور وطني ودولي",
+        text: "أصبح قلب اللوز رمزاً أساسياً في سهرات رمضان الجزائرية، حيث يُستمتع به بعد الإفطار أو صلاة التراويح، ويعشقه الذواقة في جميع أنحاء الوطن، كما وصل إلى محبين في الولايات المتحدة، إيطاليا، إسبانيا ودول الخليج.",
       },
     },
     about: {
@@ -117,7 +117,7 @@ export const translations = {
       contactSection: {
         title: "معلومات الاتصال",
         email: "alameera2500@gmail.com",
-        phone: "0541 37 63 03",
+        phone: "03 63 37 0541",
       },
       copyright: "© 2025 الأميرة. جميع الحقوق محفوظة.",
     },
