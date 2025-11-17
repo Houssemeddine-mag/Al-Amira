@@ -23,8 +23,23 @@ const Contact = () => {
 
       {/* Existing content */}
       <h1>{t.contactPage.title}</h1>
+
+      {/* Instagram Section - Prominent */}
+      <div className="instagram-section">
+        <a
+          href="https://www.instagram.com/alameeradz?igsh=MW04NDc3ZW9mNXZyaw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="instagram-link"
+        >
+          <i className="icon"></i>
+          <span>Instagram: @alameeradz</span>
+        </a>
+      </div>
+
       <div className="contact-container">
-        <div className="contact-info">
+        {/* Left Side - Addresses */}
+        <div className="contact-section addresses-section">
           <h2>{t.contactPage.infoTitle}</h2>
           <p>
             <i className="icon">📍</i> {t.contactPage.address1}
@@ -39,24 +54,18 @@ const Contact = () => {
             <i className="icon">📍</i> {t.contactPage.address4}
           </p>
           <p>
-            <i className="icon">📞</i> {t.contactPage.phone}
-          </p>
-          <p>
             <i className="icon">✉️</i>
             <a href="mailto:alameera2500@gmail.com" className="email-link">
               {t.contactPage.email}
             </a>
           </p>
-          <p>
-            <i className="icon">📱</i>
-            <a
-              href="https://www.instagram.com/alameeradz?igsh=MW04NDc3ZW9mNXZyaw=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link"
-            >
-              @alameeradz
-            </a>
+        </div>
+
+        {/* Right Side - Phone & Call Button */}
+        <div className="contact-section phone-section">
+          <h2>{t.contactPage.callTitle || "Appelez-nous"}</h2>
+          <p className="phone-number">
+            <i className="icon">📞</i> {t.contactPage.phone}
           </p>
           <button onClick={handleCall} className="call-button">
             {t.contactPage.callButton}

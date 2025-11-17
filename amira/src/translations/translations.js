@@ -74,7 +74,7 @@ export const translations = {
       address2: "حي 400 مسكن علي منجلي الخروب قسنطينة، الجزائر",
       address3: "حي الحياة سيدي مبرك العلوي قسنطينة، الجزائر",
       address4: " شارع علي ديب رقم 2 الخروب قسنطينة، الجزائر",
-      phone: "0541 37 63 03",
+      phone: "03 63 37 0541",
       email: "alameera2500@gmail.com",
       callButton: "اتصل بنا",
     },
